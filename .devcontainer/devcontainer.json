@@ -3,7 +3,7 @@
 {
 	"name": "idf-rust-esp32",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "espressif/idf-rust:esp32_1.82.0.3"
+	"image": "espressif/idf-rust:esp32_1.82.0.3",
 	//"features": {
 	//	"ghcr.io/devcontainers/features/github-cli:1": {
 	//		"installDirectlyFromGitHubRelease": true,
@@ -27,7 +27,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
+	"postCreateCommand": "rustc --version",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
